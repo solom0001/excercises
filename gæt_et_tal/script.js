@@ -1,4 +1,3 @@
-const bigNumb = document.getElementById("bigNumber");
 const guess = document.getElementById("userGuess");
 const checkBtn = document.getElementById("checkBtn");
 const feedback = document.getElementById("feedback");
@@ -6,14 +5,6 @@ const feedback = document.getElementById("feedback");
 const randomNumb = () => console.log("tilfældigt tal " + Math.floor(Math.random() * 101));
 
 let rdNumb = Math.floor(Math.random() * 100) + 1;
-// function updatedNumb() {
-//   let numb = "tilfældigt tal " + Math.floor(Math.random() * 101);
-//   bigNumb.textContent = numb;
-// }
-
-// const updatedNumb = () => (bigNumb.textContent = `tilfældigt tal = ${Math.floor(Math.random() * 101)}`);
-
-// updatedNumb();
 
 checkBtn.addEventListener("click", checkGuess);
 
