@@ -81,6 +81,7 @@ function animationEnd() {
   }
 
   showResultScreen();
+  console.log("computer choice: ", computerChoice);
 }
 
 function showResultScreen() {

@@ -19,14 +19,10 @@ h1 {
 
 #player1 {
   --rot: 1;
-  border: 2px solid greenyellow;
-  border-radius: 10%;
 }
 
 #player2 {
   --rot: -1;
-  border: 2px solid red;
-  border-radius: 10%;
 }
 
 .player {
