@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Comp gætter tallet</title>
+</head>
+
+<body>
+
+    <h1>COMPUTER GUESS UR number</h1>
+    <h2>pick a number between 1 and 100 and my AI will guess it :O</h2>
+    <div class="gameField">
+
+        <div class="textBox">
+            <p id="compGuess" class="resultText"></p>
+            <p id="result" class="resultText"></p>
+            <p id="winText" class="winText hidden"></p>
+        </div>
+        <input type="number" id="userInput" placeholder="Choose a no.">
+        <button id="startButton">
+            start
+        </button>
+
+        <div class="buttonField">
+            <div>
+                <button id="higherButton">
+                    Its higher
+                </button>
+            </div>
+
+            <div>
+                <button id="lowerButton">
+                    Its lower
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

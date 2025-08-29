@@ -1,0 +1,90 @@
+body {
+  margin: 25px;
+  background-color: rgb(0, 132, 132);
+  font-family: "Luckiest Guy", cursive;
+  color: #eee;
+  height: 100vh;
+  position: relative;
+}
+h1 {
+  font-size: 55px;
+  font-family: "Luckiest Guy", cursive;
+}
+h2 {
+  font-size: 35px;
+  font-family: sans-serif;
+}
+p {
+  font-size: 35px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+#userInput {
+  padding: 10px;
+}
+
+.gameField {
+  position: absolute;
+  width: 550px;
+  top: 50%;
+  right: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttonField {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-top: 15px;
+}
+
+#startButton {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: lightgreen;
+  font-family: "Luckiest Guy", cursive;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#higherButton {
+  padding: 15px;
+  font-family: "Luckiest Guy", cursive;
+  cursor: pointer;
+  background-color: slateblue;
+}
+
+#lowerButton {
+  padding: 15px;
+  font-family: "Luckiest Guy", cursive;
+  cursor: pointer;
+  background-color: lightpink;
+}
+
+#startButton:hover {
+  transform: translateX(2px) translateY(2px);
+}
+#higherButton:hover {
+  transform: translateX(2px) translateY(2px);
+}
+#lowerButton:hover {
+  transform: translateX(2px) translateY(2px);
+}
+
+.disabled {
+  filter: grayscale(100%) brightness(0.75);
+  pointer-events: none;
+  cursor: default;
+}
+
+.winText {
+  font-size: 35px;
+}
+
+.hidden {
+  display: none;
+}
