@@ -1,3 +1,4 @@
+import randomNumb from "./randomizer.js";
 const bigNumb = document.getElementById("bigNumber");
 
 // function updatedNumb() {
@@ -5,6 +6,12 @@ const bigNumb = document.getElementById("bigNumber");
 //   bigNumb.textContent = numb;
 // }
 
-const updatedNumb = () => (bigNumb.textContent = `tilfældigt tal = ${Math.floor(Math.random() * 101)}`);
+// const updatedNumb = () => (bigNumb.textContent = `tilfældigt tal = ${Math.floor(Math.random() * 101)}`);
 
-updatedNumb();
+// updatedNumb();
+
+const showNumb = () => {
+  return (bigNumb.textContent = `tilældigt tal= ${randomNumb(1, 100)}`);
+};
+
+showNumb();
