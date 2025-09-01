@@ -55,11 +55,17 @@
 
 //----------------------------------------------------------------------------------------------------------------------------------------------
 
-const people = ["john", "stewert", "Madeline", "Abby", "Kevin"];
+// const people = ["john", "stewert", "Madeline", "Abby", "Kevin"];
 
-let result;
+// let result;
 
-result = people.slice(0, 3);
+// result = people.slice(0, 3);
 
-console.log("RESULT: ", result); //den i Arrayet fjerner elementet på index 1 og 2 frem
-console.log("RESULT: ", people); //den i Arrayet fjerner elementet på index 1 og 2 frem og indsætter "Harriet"
+// console.log("RESULT: ", result); //den i Arrayet fjerner elementet på index 1 og 2 frem
+// console.log("RESULT: ", people); //den i Arrayet fjerner elementet på index 1 og 2 frem og indsætter "Harriet"
+
+function conGreet(firstName) {
+  console.log(`Hello ${firstName}`);
+}
+
+setTimeout(conGreet, 1000, "Harry");
