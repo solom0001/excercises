@@ -1,9 +1,6 @@
 "strict";
+import { randomNumb } from "../utils/utils.js";
 const list = document.querySelector("ul");
-
-const randomNumb = (a, b) => {
-  return Math.floor(Math.random() * 100);
-};
 
 function genereSoejle() {
   const li = document.createElement("li");
@@ -15,13 +12,38 @@ function genereSoejle() {
 
 const dataPool = () => {
   if (list.children.length >= 20) {
-    list.removeChild(list.children[0]);
+    list.removeChild(list.firstChild);
   }
   genereSoejle();
 };
 
-function createData1() {
+function createData() {
   return setInterval(dataPool, 600);
 }
 
-createData1();
+createData();
+
+// import { randomNumb } from "../utils/utils.js";
+// const list = document.querySelector("ul");
+
+// const barArr = [];
+
+// setInterval(generateBars, 500);
+
+// function generateBars() {
+//   barArr.push(randomNumb);
+
+//   if (barArr.length > 6) {
+//     barArr.shift();
+//   }
+//   render();
+// }
+
+// function render() {
+//   document.querySelectorAll("li").forEach((elm, i) => {
+//     console.log("elm:", elm);
+//     console.log("i:", i);
+
+//     elm.style.setProperty("--height", barArr[i]);
+//   });
+// }

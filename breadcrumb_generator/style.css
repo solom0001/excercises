@@ -1,0 +1,23 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  font-size: 45px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
