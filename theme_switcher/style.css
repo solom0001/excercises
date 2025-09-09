@@ -64,10 +64,12 @@ body {
 
 .header_div {
   display: flex;
+  width: 95%;
   position: absolute;
   bottom: 0;
   flex-direction: row;
   justify-content: space-between;
+  align-items: end;
 }
 
 main {
