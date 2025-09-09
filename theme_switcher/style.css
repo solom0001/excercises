@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[data-filter="light"] {
+  --body-bg-col: rgb(251, 255, 209);
+  --header-bg-col: beige;
+  --col: burlywood;
+  --main-bg-col: beige;
+  --footer-bg-col: beige;
+  --link-color: burlywood;
+}
+[data-filter="dark"] {
+  --body-bg-col: black;
+  --header-bg-col: green;
+  --col: white;
+  --main-bg-col: lightgreen;
+  --footer-bg-col: green;
+  --link-color: green;
+}
+
+[data-filter="hawaii"] {
+  --body-bg-col: hotpink;
+  --header-bg-col: yellow;
+  --col: black;
+  --main-bg-col: aqua;
+  --footer-bg-col: red;
+  --link-color: red;
+}
+
+header {
+  height: 20vh;
+  background-color: var(--header-bg-col);
+  color: var(--col);
+  border: 0.5px solid black;
+  padding: 0px 25px;
+  position: relative;
+}
+h1 {
+  font-size: 90px;
+  font-family: monospace;
+}
+
+h2 {
+  font-size: 55px;
+  font-family: monospace;
+}
+p {
+  font-size: 35px;
+  font-family: monospace;
+}
+
+a {
+  font-family: monospace;
+  color: var(--link-color);
+}
+
+body {
+  background-color: var(--body-bg-col);
+  padding: 0px 35px;
+}
+
+.header_div {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main {
+  height: 60vh;
+  border: 0.5px solid black;
+  background-color: var(--main-bg-col);
+  padding: 35px;
+  color: var(--col);
+}
+
+footer {
+  height: 20vh;
+  padding: 35px;
+  border: 0.5px solid black;
+  background-color: var(--footer-bg-col);
+  color: var(--col);
+}
