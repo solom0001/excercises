@@ -1,0 +1,26 @@
+[data-feature="leftSide"] {
+  --bg-color: rgb(3, 96, 3);
+  --bg-saturation: hsl(120, 100%, 0%);
+}
+[data-feature="leftSide1"] {
+  --bg-color: rgb(57, 162, 57);
+  --bg-saturation: hsl(120, 75%, 15%);
+}
+[data-feature="middle"] {
+  --bg-color: rgb(109, 189, 109);
+  --bg-saturation: hsl(120, 50%, 45%);
+}
+[data-feature="rightSide1"] {
+  --bg-color: rgb(183, 233, 183);
+  --bg-saturation: hsl(120, 25%, 70%);
+}
+[data-feature="rightSide"] {
+  --bg-color: rgb(255, 255, 255);
+  --bg-saturation: hsl(120, 0%, 100%);
+}
+
+body {
+  /* background-color: var(--bg-color); */
+  background-color: var(--bg-saturation);
+  transition: background-color 0.3s ease;
+}
